@@ -3,18 +3,35 @@
 
 Develop static sites with Jekyll, includes everything you need to get up and running.
 
-## Options
+### Dev container
 
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
-| imageVariant | Debian OS version (use bookworm, or bullseye on local arm64/Apple Silicon): | string | bullseye |
+You may build GitHub Pages sites with [Jekyll](https://jekyllrb.com/), which is a Ruby gem. You could manually install these tools on your machine, or you can easily get started with the setup you already need through a dev container!
 
-This template references an image that was [pre-built](https://containers.dev/implementors/reference/#prebuilding) to automatically include needed devcontainer.json metadata.
+You may review this repo's dev container in the [`.devcontainer`](https://github.com/devcontainers/containers.dev/tree/gh-pages/.devcontainer) folder.
 
-* **Image**: mcr.microsoft.com/devcontainers/jekyll ([source](https://github.com/devcontainers/images/tree/main/src/jekyll))
-* **Applies devcontainer.json contents from image**: Yes ([source](https://github.com/devcontainers/images/blob/main/src/jekyll/.devcontainer/devcontainer.json))
+It is from this [Jekyll Dev Container Template](https://github.com/devcontainers/templates/tree/main/src/jekyll).
 
+### Steps to build and run
 
----
+* Clone or open this repo in the dev container-supporting editor of your choosing.
+     * You may review supporting tools and services [here](https://containers.dev/supporting).
+* Reopen this repo in the dev container, so that the container builds and you may develop inside it using the included tools. 
+* Once the dev container finishes building, execute the following command in your dev container to start the site: `bundle exec jekyll serve`
+* Check out the site! http://localhost:4000/
 
-_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/devcontainers/templates/blob/main/src/jekyll/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
+```
+bundle exec jekyll serve
+```
+```
+bundle exec jekyll serve --livereload
+```
+
+## Feedback and contributing
+
+If you'd like to provide feedback on or contribute to the dev containers website, please feel free to open an issue or PR in this repo.
+
+For issues on and contributions to the dev container specification itself, please visit the [Dev Containers Spec repo](https://github.com/devcontainers/spec).
+
+## License
+
+License for this repository: https://github.com/karlcc/karlcc.github.io/blob/gh-pages/LICENSE.
